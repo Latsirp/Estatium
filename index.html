@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início | Estatium | Tech Master</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body class="flex flex-col min-h-screen bg-white">
     <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" type="button"
-        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-blazeOrange rounded-lg lg:hidden hover:bg-blazeOrange focus:outline-none focus:ring-2 focus:ring-blazeOrange">
+        class="fixed inline-flex items-center p-2 mt-2 ml-3 text-sm text-blazeOrange rounded-lg lg:hidden">
         <span class="sr-only">Abrir</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path clip-rule="evenodd" fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
             </path>
@@ -22,14 +22,11 @@
     <aside id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0 bg-blazeOrange">
         <div class="overflow-y-auto py-5 px-3 h-full border-r border-blazeOrange">
-            <ul class="space-y-2">
-                <li>
-                    <a href="index.html"
-                        class="flex items-center uppercase tracking-widest p-2 text-2xl text-white rounded-lg hover:bg-white hover:text-blazeOrange group">
-                        <span class="ml-3">Estatium</span>
-                    </a>
-                </li>
-            </ul>
+            <a href="index.html"
+                class="flex items-center uppercase tracking-widest p-2 text-2xl text-white rounded-lg hover:bg-white hover:text-blazeOrange group">
+                <img src="img/favicon.ico" alt="Favicon" class="h-16 w-16 mr-2">
+                <span class="ml-1">Estatium</span>
+            </a>
             <ul class="pt-5 mt-5 space-y-2 border-t border-white">
                 <li>
                     <a href="gestao.html"
@@ -81,17 +78,16 @@
                 <div
                     class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div class="font-light text-white sm:text-lg">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">We didn't
-                            reinvent the wheel</h2>
-                        <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers.
-                            Small
-                            enough to be simple and quick, but big enough to deliver the scope you want at the pace you
-                            need. Small enough to be simple and quick, but big enough to deliver the scope you want at
-                            the
-                            pace you need.</p>
-                        <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to
-                            be
-                            simple and quick.</p>
+                        <h2 id="sobre" class="mb-4 text-4xl tracking-tight font-extrabold uppercase text-white">Sobre
+                            nós</h2>
+                        <p class="mb-4">A Estatium foi criada para ajudar qualquer empresa que deseja controlar a
+                            qualidade do seu produto, fazendo assim, sua empresa um local melhor e mais favorável para a
+                            excelência.<br><br>Nós conseguimos fazer com que você consigo <strong>adicionar</strong>
+                            produtos, <strong>atualizar</strong> dados
+                            de produtos, <strong>deletar</strong> e <strong>mostrar</strong> o desempenho geral e do
+                            produto avulso.<br><br>Também temos um
+                            sistema que informa a última data de inspeção do produto e controlando quando será
+                            necessário inspecionar novamente.</p>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mt-8">
                         <img class="w-full rounded-lg"
@@ -104,69 +100,72 @@
                 </div>
             </section>
             <section>
-                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                    <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-blazeOrange">Nosso Time
-                        </h2>
+                <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                    <div class="max-w-screen-md mb-8 lg:mb-16">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold uppercase text-blazeOrange">Linguagens de
+                            programação</h2>
+                        <p class="text-blazeOrange sm:text-xl">Na Estatium, exploramos as linguagens de programação
+                            essenciais que impulsionam a criação de soluções digitais inovadoras.<br><br>Desde a
+                            estruturação
+                            básica com HTML até a interatividade dinâmica com JavaScript, cada linguagem desempenha um
+                            papel crucial na construção de experiências web robustas e funcionais.
+                        </p>
                     </div>
-                    <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-                        <div class="items-center bg-blazeOrange rounded-lg shadow sm:flex">
-                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/henrique.png"
-                                alt="Líder">
-                            <div class="p-5">
-                                <h3 class="text-xl font-bold tracking-tight text-white">
-                                    Henrique Eberhardt
-                                </h3>
-                                <span class="text-white">Líder</span>
-                                <p class="mt-3 mb-4 font-light text-white">Henrique conduz a estratégia técnica e as
-                                    iniciativas de liderança para a marca Estatium.</p>
+                    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/html5.svg" alt="HTML">
                             </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">HTML</h3>
+                            <p class="text-blazeOrange">HTML permite definir a estrutura básica de uma página, incluindo
+                                elementos como texto, imagens e links.</p>
                         </div>
-                        <div class="items-center bg-blazeOrange rounded-lg shadow sm:flex">
-                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/miguel.png"
-                                alt="Líder">
-                            <div class="p-5">
-                                <h3 class="text-xl font-bold tracking-tight text-white">
-                                    Miguel Vieiro da Silva
-                                </h3>
-                                <span class="text-white">Marketing</span>
-                                <p class="mt-3 mb-4 font-light text-white">Miguel molda a estratégia de marketing e as
-                                    iniciativas para a marca Estatium.</p>
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/css3.svg" alt="CSS">
                             </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">CSS</h3>
+                            <p class="text-blazeOrange">CSS é usado para controlar o layout, as cores e os estilos de
+                                todos os elementos HTML em um site.</p>
                         </div>
-                        <div class="items-center bg-blazeOrange rounded-lg shadow sm:flex">
-                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/enzo.png" alt="Líder">
-                            <div class="p-5">
-                                <h3 class="text-xl font-bold tracking-tight text-white">
-                                    Enzo dos Santos Scholl
-                                </h3>
-                                <span class="text-white">Front-end</span>
-                                <p class="mt-3 mb-4 font-light text-white">Enzo arquiteta o desenvolvimento front-end e
-                                    a experiência do usuário para a marca Estatium.</p>
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/js.svg" alt="JavaScript">
                             </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">JavaScript</h3>
+                            <p class="text-blazeOrange">JavaScript permite criar funcionalidades avançadas, como
+                                animações, validações de formulários e atualizações de conteúdo em tempo real.</p>
                         </div>
-                        <div class="items-center bg-blazeOrange rounded-lg shadow sm:flex">
-                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/mick.png" alt="Líder">
-                            <div class="p-5">
-                                <h3 class="text-xl font-bold tracking-tight text-white">
-                                    João Vitor Mick Schmitt
-                                </h3>
-                                <span class="text-white">Back-end</span>
-                                <p class="mt-3 mb-4 font-light text-white">João Vitor lidera o desenvolvimento
-                                    back-end e a infraestrutura técnica para a marca Estatium.</p>
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/java.svg" alt="Java">
                             </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">Java</h3>
+                            <p class="text-blazeOrange">Java é amplamente utilizado em aplicativos corporativos, desde
+                                sistemas financeiros até aplicativos móveis.</p>
                         </div>
-                        <div class="items-center bg-blazeOrange rounded-lg shadow sm:flex">
-                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/kaht.png" alt="Líder">
-                            <div class="p-5">
-                                <h3 class="text-xl font-bold tracking-tight text-white">
-                                    Guilherme Henrique Kaht
-                                </h3>
-                                <span class="text-white">Banco de dados</span>
-                                <p class="mt-3 mb-4 font-light text-white">Guilherme Henrique gerencia a arquitetura de
-                                    banco de dados e as estratégias de gerenciamento de dados para a marca
-                                    Estatium.</p>
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/sql.svg" alt="SQL">
                             </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">SQL</h3>
+                            <p class="text-blazeOrange">SQL é essencial para consultas complexas, inserções de dados e
+                                operações de atualização em bancos de dados..</p>
+                        </div>
+                        <div>
+                            <div
+                                class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blazeOrange lg:h-12 lg:w-12">
+                                <img class="w-6 h-6 lg:w-8 lg:h-8 invert" src="img/php.svg" alt="PHP">
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold text-blazeOrange">PHP</h3>
+                            <p class="text-blazeOrange">PHP é uma linguagem de script utilizada para interações
+                                avançadas com bancos de
+                                dados e sistemas externos.</p>
                         </div>
                     </div>
                 </div>
@@ -188,6 +187,97 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                        <h2
+                            class="mb-4 p-4 text-4xl tracking-tight uppercase font-extrabold text-blazeOrange bg-white shadow-lg rounded-lg">
+                            Nosso time
+                        </h2>
+                    </div>
+                    <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                        <div class="items-center bg-white rounded-lg shadow-lg sm:flex">
+                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/henrique.png"
+                                alt="Líder">
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold tracking-tight text-blazeOrange">
+                                    Henrique Eberhardt
+                                </h3>
+                                <span class="text-blazeOrange">Líder</span>
+                                <p class="mt-3 mb-4 font-light text-blazeOrange">Henrique conduz a estratégia técnica e
+                                    as
+                                    iniciativas de liderança para a marca Estatium.</p>
+                            </div>
+                        </div>
+                        <div class="items-center bg-white rounded-lg shadow-lg sm:flex">
+                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/miguel.png"
+                                alt="Líder">
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold tracking-tight text-blazeOrange">
+                                    Miguel Vieiro da Silva
+                                </h3>
+                                <span class="text-blazeOrange">Marketing</span>
+                                <p class="mt-3 mb-4 font-light text-blazeOrange">Miguel molda a estratégia de marketing
+                                    e as
+                                    iniciativas para a marca Estatium.</p>
+                            </div>
+                        </div>
+                        <div class="items-center bg-white rounded-lg shadow-lg sm:flex">
+                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/enzo.png" alt="Líder">
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold tracking-tight text-blazeOrange">
+                                    Enzo dos Santos Scholl
+                                </h3>
+                                <span class="text-blazeOrange">Front-end</span>
+                                <p class="mt-3 mb-4 font-light text-blazeOrange">Enzo arquiteta o desenvolvimento
+                                    front-end e
+                                    a experiência do usuário para a marca Estatium.</p>
+                            </div>
+                        </div>
+                        <div class="items-center bg-white rounded-lg shadow-lg sm:flex">
+                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/mick.png" alt="Líder">
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold tracking-tight text-blazeOrange">
+                                    João Vitor Mick Schmitt
+                                </h3>
+                                <span class="text-blazeOrange">Back-end</span>
+                                <p class="mt-3 mb-4 font-light text-blazeOrange">João Vitor lidera o desenvolvimento
+                                    back-end e a infraestrutura técnica para a marca Estatium.</p>
+                            </div>
+                        </div>
+                        <div class="items-center bg-white rounded-lg shadow-lg sm:flex">
+                            <img class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg" src="img/kaht.png" alt="Líder">
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold tracking-tight text-blazeOrange">
+                                    Guilherme Henrique Kaht
+                                </h3>
+                                <span class="text-blazeOrange">Banco de dados</span>
+                                <p class="mt-3 mb-4 font-light text-blazeOrange">Guilherme Henrique gerencia a
+                                    arquitetura de
+                                    banco de dados e as estratégias de gerenciamento de dados para a marca
+                                    Estatium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-blazeOrange text-right">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                    <div class="max-w-screen-lg text-white sm:text-lg ml-auto">
+                        <h2 class="mb-4 text-4xl tracking-tight font-bold text-white">Powering innovation
+                            at <span class="font-extrabold">200,000+</span> companies worldwide</h2>
+                        <p class="mb-4 font-light">Track work across the enterprise through an open, collaborative
+                            platform.
+                            Link issues across Jira and ingest data from other software development tools, so your IT
+                            support and operations teams have richer contextual information to rapidly respond to
+                            requests,
+                            incidents, and changes.</p>
+                        <p class="mb-4 font-medium">Deliver great service experiences fast - without the complexity of
+                            traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy
+                            changes with ease.</p>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="bg-white rounded-lg shadow m-4">
             <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -195,7 +285,7 @@
                 </span>
                 <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-blazeOrange sm:mt-0">
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Sobre</a>
+                        <a href="#sobre" class="hover:underline me-4 md:me-6">Sobre</a>
                     </li>
                     <li>
                         <a href="#" class="hover:underline">Instagram</a>
