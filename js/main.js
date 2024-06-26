@@ -7,6 +7,14 @@ sidebarToggleButton.addEventListener('click', function () {
     contentWrapper.classList.toggle('ml-64');
 });
 
+document.addEventListener('click', function (event) {
+    if (!sidebar.contains(event.target) && !sidebarToggleButton.contains(event.target)) {
+        sidebar.classList.add('-translate-x-full');
+        contentWrapper.classList.remove('ml-64');
+        contentWrapper.classList.add('ml-0');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownButton = document.getElementById('example-dropdown-button');
     const dropdownMenu = document.getElementById('example-dropdown');

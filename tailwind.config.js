@@ -23,7 +23,10 @@ module.exports = {
         black: '#000000',
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+      letterSpacing: {
+        estatium: '-.052em',
       }
     },
   },
