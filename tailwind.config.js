@@ -22,6 +22,9 @@ module.exports = {
         mochaccino: '#905808',
         black: '#000000',
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
